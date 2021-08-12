@@ -1,0 +1,9 @@
+<div>
+  <div *ngIf="status; else statusFalse">
+    <p class="text-primary">p1</p>
+  </div>
+  <ng-template #statusFalse>
+    <p class="text-info">p2</p>
+  </ng-template>
+  <button class="btn btn-outline-dark" (click)="status = !status">Bouton</button>
+</div>
